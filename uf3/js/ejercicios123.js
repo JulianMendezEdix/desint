@@ -238,6 +238,76 @@ manoSinAses = [
     baraja [4]
 ]
 
+// Ejercicio 3
+/*Desarrolla un programa que use la función anterior para puntuar las manos
+de cartas de dos jugadores e imprima por consola al ganador, es decir, al
+que obtenga mayor puntuación.
+Estilo
+*/
+
+jugador1 = {
+    nombre : 'Pepito',
+    mano: mano1
+}
+
+jugador2 = {
+    nombre : 'Anita',
+    mano: mano2
+}
+
+if (puntuar(jugador1.mano)>puntuar(jugador2.mano))
+    console.log('Player 1 wins')
+else if (puntuar(jugador1.mano)==puntuar(jugador2.mano))
+    console.log('Tie')
+else
+    console.log('Player 2 wins')
+
+// Ejercicio 4
+/*4. Pide al usuario que introduzca el nombre de un color y cambia el color de
+fondo de la página web con ese color.
+5. Crea una página web como la de la figura, al
+seleccionar un botón de radio y hacer clic en el botón,
+se cambiará el color de fondo de la página.
+*/
+
+document.addEventListener("DOMContentLoaded", function() {
+    let color = prompt("Set background color (red, yellow, green)");
+    document.body.style.background=color;
+    /*
+    switch (color) {
+        case "red":
+            document.body.style.backgroundColor = "red";
+            break;
+        case 'yellow':
+            document.body.style.backgroundColor = 'yellow';
+            break;
+        case 'green':
+            document.body.style.backgroundColor = 'green';
+            break;
+        default:
+            console.log('Color erroneo');
+    }*/
+});
+
+let option;
+
+function setColor (){
+    let color;
+    if (option[0].checked) color = option[0].value;
+    else if (option[1].checked) color = option[1].value;
+    else color = option[2].value;
+    document.body.style.background= color;
+}
+
+window.onload = function () {
+
+    option=document.form.radio;
+    document.form.button.addEventListener('click', setColor);
+
+}
+
+
+
 
 
 
