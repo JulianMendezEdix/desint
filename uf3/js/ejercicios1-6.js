@@ -282,10 +282,8 @@ fuera de la imagen.*/
 let imagen;
 
 window.onload = function () {
-
     let color = prompt("Set background color (red, yellow, green)");
     document.body.style.background=color;
-    
     //EJ6
     inicializar();
     configurarEventos();
@@ -297,23 +295,16 @@ function inicializar () {
 }
 
 function aumentarTam () {
-
     imagen.style.width="300px";
-
 }
 
 function disminuirTam () {
-
     imagen.style.width="100px";
-
 }
 
 function configurarEventos () {
-
     imagen.addEventListener('mouseover',aumentarTam);
     imagen.addEventListener('mouseout',disminuirTam);
-
-
 }
 
 
