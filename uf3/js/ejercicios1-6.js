@@ -264,47 +264,66 @@ else
 
 // Ejercicio 4
 /*4. Pide al usuario que introduzca el nombre de un color y cambia el color de
-fondo de la página web con ese color.
-5. Crea una página web como la de la figura, al
+fondo de la página web con ese color.*/
+
+
+/*5. Crea una página web como la de la figura, al
 seleccionar un botón de radio y hacer clic en el botón,
 se cambiará el color de fondo de la página.
 */
 
-document.addEventListener("DOMContentLoaded", function() {
-    let color = prompt("Set background color (red, yellow, green)");
-    document.body.style.background=color;
-    /*
-    switch (color) {
-        case "red":
-            document.body.style.backgroundColor = "red";
-            break;
-        case 'yellow':
-            document.body.style.backgroundColor = 'yellow';
-            break;
-        case 'green':
-            document.body.style.backgroundColor = 'green';
-            break;
-        default:
-            console.log('Color erroneo');
-    }*/
-});
+// NO SE HACERLO. Preguntar en clase.
 
-let option;
 
-function setColor (){
-    let color;
-    if (option[0].checked) color = option[0].value;
-    else if (option[1].checked) color = option[1].value;
-    else color = option[2].value;
-    document.body.style.background= color;
-}
+/*6. Crea una página web con una imagen que aumente de tamaño cuando el
+ratón pase por encima y, recupere su tamaño original cuando el ratón salga
+fuera de la imagen.*/
+
+let imagen;
 
 window.onload = function () {
 
-    option=document.form.radio;
-    document.form.button.addEventListener('click', setColor);
+    let color = prompt("Set background color (red, yellow, green)");
+    document.body.style.background=color;
+    
+    //EJ6
+    inicializar();
+    configurarEventos();
+};
+
+function inicializar () {
+    imagen=document.getElementById("imagen");
+    imagen.style.width="200px"
+}
+
+function aumentarTam () {
+
+    imagen.style.width="300px";
 
 }
+
+function disminuirTam () {
+
+    imagen.style.width="100px";
+
+}
+
+function configurarEventos () {
+
+    imagen.addEventListener('mouseover',aumentarTam);
+    imagen.addEventListener('mouseout',disminuirTam);
+
+
+}
+
+
+
+
+
+
+
+
+
 
 
 
