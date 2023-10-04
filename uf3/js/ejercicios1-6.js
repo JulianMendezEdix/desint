@@ -275,6 +275,7 @@ se cambiará el color de fondo de la página.
 // NO SE HACERLO. Preguntar en clase.
 
 
+
 /*6. Crea una página web con una imagen que aumente de tamaño cuando el
 ratón pase por encima y, recupere su tamaño original cuando el ratón salga
 fuera de la imagen.*/

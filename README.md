@@ -23,6 +23,5 @@ Programación en Javascript.
 - Funciones. Masterclass:  https://youtu.be/sp9mKeECya8
 
 
-
 ## 27/09/23
 
