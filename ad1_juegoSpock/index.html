@@ -3,30 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>ROCK PAPER SCISSORS LIZARD SPOCK</title>
     <script src="js/codigo.js"></script>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/mediaQueries.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arvo&display=swap" rel="stylesheet">
+
 </head>
 <body>
-    <header>
-        <form id>
+    <header id = "header">
+        <h1 id = "title">ROCK PAPER SCISSORS LIZARD SPOCK</h1>
+        <form id="nameEnter">
             <label for="nombre">Enter your name</label>
             <input type="text" id="nombre" name="hola">
             <button type="submit">New game</button>
         </form>
     </header>
 
-    <nav id="ply">asdf
+    <nav id = "player">
+        <p>player</p>
+        <a href="#"><img src="img/rock.png"></a>
+        <a href="#"><img src="img/paper.png"></a>
+        <a href="#"><img src="img/scissors.png"></a>
+        <a href="#"><img src="img/lizard.png"></a>
+        <a href="#"><img src="img/spock.png"></a>
     </nav>
 
-    <aside id="com">asdf
+    <main id = "main">
+        <header id = "result"><p>RESULT</p></header>
+        <section id = "pl1Option">
+            <img id ="imgSel" src="img/rock.png">
+        </section>
+        <section id = "vs">VS</section>
+        <section id = "pl2Option">
+            <img id ="imgSel" src="img/rock.png">
+        </section>
+    </main>
+
+    <aside id = "computer">
+        <p>comp</p>
+        <img src="img/rock.png">
+        <img src="img/paper.png">
+        <img src="img/scissors.png">
+        <img src="img/lizard.png">
+        <img src="img/spock.png">
     </aside>
 
-    <main>
-        <header>sadf</header>
-        <section>sdaf</section>
-        <section>sadf</section>
-        <section>sadf</section>
-    </main>
+    <footer id="footer">© Group 4 - Olga Pichel - Julián Méndez  </footer>
 
 </body>
 </html>
