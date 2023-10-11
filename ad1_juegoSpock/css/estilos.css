@@ -47,15 +47,12 @@ html, body, #wrapper {
     box-shadow: 0px 0px 2px #818892;
 }
 
-#player a {
-    display: block;
-
-  }
   
 #player img {
     display: block;
     width: 80px;
     margin: auto;
+    overflow: hidden;
   }
 
 #main {
@@ -64,10 +61,18 @@ html, body, #wrapper {
     height: 100%;
 
 }
+
+#resultHeader{
+    height: 30%;
+    font-size: 50px;
+    font-weight: bold;
+}
 #result{
     height: 30%;
-
+    font-size: 50px;
+    font-weight: bold;
 }
+
 #pl1Option{
     float: left;
     width: 40%;
@@ -80,7 +85,11 @@ html, body, #wrapper {
     width: 100%;
     margin: auto;
 }
+#imgComSel {
 
+    width: 100%;
+    margin: auto;
+}
 #vs{
     float: left;
     width: 20%;
@@ -107,7 +116,8 @@ html, body, #wrapper {
     display: block;
     width: 80px;
     margin: auto;
-  }
+    overflow: hidden;
+}
 
 #footer {
 
